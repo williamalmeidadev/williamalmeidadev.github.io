@@ -4,27 +4,26 @@
 body, html, #root {
   width: 100%;
   height: 100%;
-  margin: 0; /* Garante que não há margens padrão */
-  padding: 0; /* Garante que não há preenchimento padrão */
-  overflow-x: hidden; /* Evita rolagem horizontal indesejada */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-/* Estilos para a primeira seção */
 #inicio {
-  position: relative; /* Pai para os elementos absolutos internos */
+  position: relative;
   width: 100%;
-  height: 100vh; /* Define a altura da seção para ocupar a tela inteira */
-  display: flex; /* Para centralizar o conteúdo */
+  height: 100vh;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white; /* Cor do texto padrão para esta seção */
+  color: white;
   text-align: center;
 }
 
 .background-container {
   width: 100%;
-  height: 100%; /* Ocupa 100% da altura do pai (#inicio) */
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -32,42 +31,59 @@ body, html, #root {
 }
 
 .content-overlay {
-  position: relative; /* Muda de absolute para relative, ou mantem absolute mas dentro do #inicio */
+  position: relative;
   width: 100%;
-  height: 100%; /* Ocupa 100% da altura do pai (#inicio) */
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   z-index: 2;
   color: white;
-  text-align: center;
-  /* pointer-events: none; Removido para permitir interações com botões */
+  gap: 40px;
+  padding: 0 20px;
+  flex-wrap: wrap;
 }
 
-/* Estilos para a segunda seção */
-#tecnologias {
-  width: 100%;
-  min-height: 100vh;
-  color: #333;
+.left-content {
+  flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  padding: 20px; /* Adiciona um pouco de padding */
-  box-sizing: border-box; /* Garante que padding não aumente o tamanho total */
+  min-width: 300px;
 }
 
-#project-title {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 3em;
-  color: white;
-  max-width: 100;
-  text-align: center;
+.right-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  min-width: 300px;
+  margin-right: 12%;
 }
 
-/* Estilos de botões e texto principal mantidos como estavam, mas com as mudanças que discutimos */
+@media (max-width: 768px) {
+  .content-overlay {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .left-content, .right-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: unset;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .button-container {
+    justify-content: center;
+  }
+}
+
 .content-overlay h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
@@ -98,6 +114,14 @@ body, html, #root {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 5em;
+  font-size: 4.5em;
+  color: white;
+}
+
+#project-title-container {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 3em;
   color: white;
 }
