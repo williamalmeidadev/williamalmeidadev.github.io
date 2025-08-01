@@ -2,7 +2,7 @@ import './App.css';
 import Squares from './blocks/Backgrounds/Squares/Squares';
 import TextType from './blocks/TextAnimations/TextType/TextType';
 import TiltedCard from './blocks/Components/TiltedCard/TiltedCard';
-import { FaInstagram, FaLinkedin, FaGithub, FaReact, FaNodeJs, FaCode } from "react-icons/fa6";
+import { FaInstagram, FaLinkedin, FaGithub, FaReact, FaNodeJs, FaCode, FaEnvelope } from "react-icons/fa6";
 import { SiNextdotjs, SiPostgresql, SiAuth0, SiVite } from "react-icons/si";
 
 function App() {
@@ -33,7 +33,8 @@ function App() {
         </nav>
       </header>
 
-      <section id='inicio'>
+      {/* Aplique min-h-screen à seção de Início */}
+      <section id='inicio' className='min-h-screen'>
         <div className="background-container">
           <Squares
             speed={0.5}
@@ -72,21 +73,31 @@ function App() {
             </div>
 
             <div style={{ display: 'flex', marginTop: '20px' }} className="button-container">
-              <button className="button-primary">Saiba Mais</button>
-              <button className="button-secondary">Entre em Contato</button>
+              {/* Updated buttons with glassmorphism Tailwind classes */}
+              <a href='#sobremim' className="px-6 py-3 mr-4 rounded-full text-white font-semibold transition-all duration-300
+                                 bg-purple-700/20 backdrop-blur-md border border-purple-400/30 shadow-lg
+                                 hover:bg-purple-800/30 hover:border-purple-500/40">
+                Sobre Mim
+              </a>
+              <a href='#contato' className="px-6 py-3 rounded-full text-white font-semibold transition-all duration-300
+                                 bg-transparent backdrop-blur-md border border-white/20 shadow-lg
+                                 hover:bg-white/10 hover:border-white/30">
+                Entre em Contato
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section id='sobremim' className='py-16 px-4 bg-[#111119] text-white'>
+      {/* Aplique min-h-screen à seção Sobre Mim */}
+      <section id='sobremim' className='min-h-screen py-16 px-4 bg-[#111119] text-white flex flex-col justify-center'>
         <div id='study-title-container' className='flex items-center justify-center mb-12'>
           <h2 className='text-4xl sm:text-5xl font-extrabold mr-2'>Sobre mim e meus estudos</h2>
         </div>
 
         <div className="max-w-6xl mx-auto text-center mb-12 bg-zinc-900 border border-purple-400 p-8 rounded-lg shadow-xl">
           <p className="text-zinc-300 text-lg leading-relaxed">
-            Me chamo <strong>William Almeida</strong>, tenho 17 anos e moro em Paramoti - CE. Sou um entusiasta apaixonado por tecnologia, com foco especial em <strong>desenvolvimento Web</strong>. Já fui premiado em olimpíadas nacionais de tecnologia, como a <strong>Maratona Tech</strong> e a <strong>Olimpíada Brasileira de Tecnologia</strong>, o que reforça meu compromisso com o aprendizado e a evolução na área de TI.
+            Me chamo <strong>William Almeida</strong>, tenho 17 anos e moro em Paramoti - CE. Sou um entusiasta apaixonado por tecnologia, com foco especial em <strong>desenvolvimento Web</strong>. Fui premiado em olimpíadas nacionais de tecnologia, como a <strong>Maratona Tech</strong> e a <strong>Olimpíada Brasileira de Tecnologia</strong>, o que reforça meu compromisso com o aprendizado e a evolução na área de TI.
           </p>
         </div>
 
@@ -150,10 +161,10 @@ function App() {
         </div>
       </section>
 
-      <section id='projetos' className='py-16 px-4 bg-[#111119] text-white'>
+      {/* Aplique min-h-screen à seção Projetos */}
+      <section id='projetos' className='min-h-screen py-16 px-4 bg-[#111119] text-white flex flex-col justify-center'>
         <div id='project-title-container' className='flex items-center justify-center mb-12'>
           <h2 className='text-4xl sm:text-5xl font-extrabold mr-2'>Projetos</h2>
-          {/* O componente RotatingText foi removido para simplificar o código, conforme sua solicitação de remover código desnecessário. */}
         </div>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto'>
@@ -179,6 +190,7 @@ function App() {
               <FaReact size={24} />
               <FaNodeJs size={24} />
               <SiAuth0 size={24} />
+              <SiPostgresql size={24} />
               <FaCode size={24} />
             </div>
             <h3 className='text-2xl font-bold mb-2'>Gerenciamento Biblioteca</h3>
@@ -194,6 +206,7 @@ function App() {
               <SiNextdotjs size={24} />
               <FaReact size={24} />
               <FaCode size={24} />
+              <SiPostgresql size={24} />
               <SiVite size={24} />
             </div>
             <h3 className='text-2xl font-bold mb-2'>EcoAção</h3>
@@ -201,6 +214,39 @@ function App() {
             <button className='bg-purple-700 hover:bg-purple-900 text-white font-semibold py-2 px-4 rounded-full transition-colors'>
               Ver Projeto
             </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Aplique min-h-screen à seção de Contato */}
+      <section id='contato' className='min-h-screen py-16 px-4 bg-[#111119] text-white flex flex-col justify-center'>
+        <div id='contact-title-container' className='flex items-center justify-center mb-12'>
+          <h2 className='text-4xl sm:text-5xl font-extrabold mr-2'>Entre em Contato</h2>
+        </div>
+
+        <div className='max-w-2xl mx-auto text-center'>
+          <p className='text-lg mb-8 text-zinc-300'>
+            Fique à vontade para me enviar uma mensagem, conectar-se comigo nas redes sociais ou verificar meus projetos no GitHub.
+          </p>
+
+          {/* Links de Contato com efeito de card e glassmorphism */}
+          <div className='flex flex-col sm:flex-row justify-center items-center gap-6'>
+            <a href="mailto:williamalmeida1337@gmail.com" className='flex items-center space-x-4 bg-white/5 backdrop-blur-md border border-white/20 shadow-lg p-6 rounded-lg transition-all duration-300 hover:bg-white/10 hover:border-white/30'>
+              <FaEnvelope size={32} className='text-purple-400' />
+              <span className='font-semibold text-lg'>Email</span>
+            </a>
+            <a href="https://www.linkedin.com/in/williamalmeida0/" target="_blank" rel="noopener noreferrer" className='flex items-center space-x-4 bg-white/5 backdrop-blur-md border border-white/20 shadow-lg p-6 rounded-lg transition-all duration-300 hover:bg-white/10 hover:border-white/30'>
+              <FaLinkedin size={32} className='text-purple-400' />
+              <span className='font-semibold text-lg'>LinkedIn</span>
+            </a>
+            <a href="https://github.com/WilliamAlmeida1" target="_blank" rel="noopener noreferrer" className='flex items-center space-x-4 bg-white/5 backdrop-blur-md border border-white/20 shadow-lg p-6 rounded-lg transition-all duration-300 hover:bg-white/10 hover:border-white/30'>
+              <FaGithub size={32} className='text-purple-400' />
+              <span className='font-semibold text-lg'>GitHub</span>
+            </a>
+            <a href="https://www.instagram.com/_williamalmeida/" target="_blank" rel="noopener noreferrer" className='flex items-center space-x-4 bg-white/5 backdrop-blur-md border border-white/20 shadow-lg p-6 rounded-lg transition-all duration-300 hover:bg-white/10 hover:border-white/30'>
+              <FaInstagram size={32} className='text-purple-400' />
+              <span className='font-semibold text-lg'>Instagram</span>
+            </a>
           </div>
         </div>
       </section>
