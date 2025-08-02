@@ -36,7 +36,7 @@ function App() {
               <a href="https://www.linkedin.com/in/williamalmeida0/" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
                 <FaLinkedin size={24} />
               </a>
-              <a href="https://github.com/WilliamAlmeida1" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
+              <a href="https://github.com/WilliamAlmeidadev" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
                 <FaGithub size={24} />
               </a>
               <a href="https://www.instagram.com/_williamalmeida/" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
@@ -65,7 +65,7 @@ function App() {
             <a href="https://www.linkedin.com/in/williamalmeida0/" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
               <FaLinkedin size={32} />
             </a>
-            <a href="https://github.com/WilliamAlmeida1" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
+            <a href="https://github.com/WilliamAlmeidadev" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
               <FaGithub size={32} />
             </a>
             <a href="https://www.instagram.com/_williamalmeida/" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
