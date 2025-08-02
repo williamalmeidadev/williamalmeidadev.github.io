@@ -4,36 +4,29 @@ import TextType from './blocks/TextAnimations/TextType/TextType';
 import TiltedCard from './blocks/Components/TiltedCard/TiltedCard';
 import { FaInstagram, FaLinkedin, FaGithub, FaReact, FaNodeJs, FaCode, FaEnvelope} from "react-icons/fa6";
 import { SiNextdotjs, SiPostgresql, SiAuth0, SiVite, SiMedium } from "react-icons/si";
-import './App.css'; // Mantenha este import para estilos específicos
+import './App.css';
 import { IoMenu } from "react-icons/io5";
 
 function App() {
-  // Estado para controlar a abertura/fechamento do menu móvel
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  // Função para alternar o estado do menu
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <>
-      {/* Cabeçalho */}
       <header className='fixed top-0 left-0 w-full z-50 p-4'>
         <nav className='flex justify-between items-center max-w-7xl mx-auto rounded-full backdrop-blur-md bg-white/10 border border-white/20 shadow-lg px-4 py-3 md:px-8 md:py-4'>
-          {/* Título do Portfólio */}
           <div className='text-white text-lg md:text-2xl font-bold'>
             William Almeida - Portfólio
           </div>
           
-          {/* Botão do menu de hambúrguer (visível apenas em telas pequenas) */}
           <div className='md:hidden'>
             <button onClick={toggleMenu} className='text-white p-2 focus:outline-none'>
               <IoMenu size={24} />
             </button>
           </div>
 
-          {/* Menu principal (oculto em telas pequenas) */}
           <div className='hidden md:flex items-center space-x-6 text-white'>
             <a href="#inicio" className='font-semibold text-lg hover:text-purple-400 transition-colors'>Início</a>
             <a href="#sobremim" className='font-semibold text-lg hover:text-purple-400 transition-colors'>Sobre mim</a>
@@ -57,7 +50,6 @@ function App() {
         </nav>
       </header>
 
-      {/* Menu de sobreposição para dispositivos móveis */}
       {isMenuOpen && (
         <div className='fixed top-0 left-0 w-full h-full bg-zinc-900/90 backdrop-blur-sm z-[60] flex flex-col items-center justify-center text-white p-8 animate-fade-in'>
           <button onClick={toggleMenu} className='absolute top-4 right-4 text-white p-2 focus:outline-none'>
@@ -86,7 +78,6 @@ function App() {
         </div>
       )}
 
-      {/* Seção de Início */}
       <section id='inicio' className='min-h-screen relative flex items-center justify-center p-4 md:p-8'>
         <div className="absolute inset-0 z-0">
           <Squares speed={0.5} squareSize={40} direction='diagonal' borderColor='#271E37' hoverFillColor='#222' />
@@ -107,7 +98,6 @@ function App() {
               showTooltip={true}
             />
           </div>
-          {/* Contêiner de texto e botões, agora mais largo */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left w-full">
             <div className='font-poppins font-semibold text-4xl sm:text-5xl md:text-5xl lg:text-7xl text-white'>
               <TextType
@@ -134,9 +124,6 @@ function App() {
         </div>
       </section>
 
-
-
-      {/* Seção Sobre Mim */}
       <section id='sobremim' className='min-h-screen py-16 px-4 bg-[#111119] text-white flex flex-col justify-center'>
         <div className='text-center mb-12'>
           <h2 className='text-4xl sm:text-5xl font-extrabold font-poppins'>Sobre mim e meus estudos</h2>
@@ -147,7 +134,6 @@ function App() {
           </p>
         </div>
         <div className='flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8 max-w-6xl mx-auto'>
-          {/* Card 1 */}
           <div className='flex flex-col items-center bg-zinc-800 border-2 border-purple-400 p-6 rounded-lg shadow-xl w-full md:w-1/3 transition-all duration-300 hover:shadow-[0_0_25px_rgba(192,132,252,0.8)]'>
             <div className="flex justify-between items-center w-full mb-4">
               <FaCode size={24} className="text-purple-400" />
@@ -161,7 +147,6 @@ function App() {
               Em andamento!
             </button>
           </div>
-          {/* Card 2 */}
           <div className='flex flex-col items-center bg-zinc-800 border-2 border-purple-400 p-6 rounded-lg shadow-xl w-full md:w-1/3 transition-all duration-300 hover:shadow-[0_0_25px_rgba(192,132,252,0.5)]'>
             <div className="flex justify-between items-center w-full mb-4">
               <FaCode size={24} className="text-purple-400" />
@@ -175,7 +160,6 @@ function App() {
               Ver Certificado
             </a>
           </div>
-          {/* Card 3 */}
           <div className='flex flex-col items-center bg-zinc-800 border-2 border-purple-400 p-6 rounded-lg shadow-xl w-full md:w-1/3 transition-all duration-300 hover:shadow-[0_0_25px_rgba(192,132,252,0.8)]'>
             <div className="flex justify-between items-center w-full mb-4">
               <FaCode size={24} className="text-purple-400" />
@@ -192,13 +176,11 @@ function App() {
         </div>
       </section>
 
-      {/* Seção Projetos */}
       <section id='projetos' className='min-h-screen py-16 px-4 bg-[#111119] text-white flex flex-col justify-center'>
         <div className='text-center mb-12'>
           <h2 className='text-4xl sm:text-5xl font-extrabold font-poppins'>Projetos</h2>
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto'>
-          {/* Projeto 1 */}
           <div className='bg-zinc-800 p-6 rounded-lg shadow-xl transition-transform duration-300 hover:scale-105'>
             <img src="./acervo.png" alt="Imagem sistema de acervo literário" className="w-full h-48 object-cover rounded-md mb-4" />
             <div className="flex space-x-3 mb-4 text-purple-400">
@@ -214,7 +196,6 @@ function App() {
               Ver Projeto
             </button>
           </div>
-          {/* Projeto 2 */}
           <div className='bg-zinc-800 p-6 rounded-lg shadow-xl transition-transform duration-300 hover:scale-105'>
             <img src="./acervo.png" alt="Placeholder do Projeto 2" className="w-full h-48 object-cover rounded-md mb-4" />
             <div className="flex space-x-3 mb-4 text-purple-400">
@@ -230,7 +211,6 @@ function App() {
               Ver Projeto
             </button>
           </div>
-          {/* Projeto 3 */}
           <div className='bg-zinc-800 p-6 rounded-lg shadow-xl transition-transform duration-300 hover:scale-105'>
             <img src="./ecoacao.png" alt="Placeholder do Projeto 3" className="w-full h-48 object-cover rounded-md mb-4" />
             <div className="flex space-x-3 mb-4 text-purple-400">
@@ -249,7 +229,6 @@ function App() {
         </div>
       </section>
 
-      {/* Seção de Contato */}
       <section id='contato' className='min-h-screen py-16 px-4 bg-[#111119] text-white flex flex-col justify-center'>
         <div className='text-center mb-12'>
           <h2 className='text-4xl sm:text-5xl font-extrabold font-poppins'>Entre em Contato</h2>
