@@ -52,7 +52,7 @@ function App() {
         <div className="content-overlay">
           <div className="left-content">
             <TiltedCard
-              imageSrc="/will.png"
+              imageSrc="./will.png"
               altText="William Almeida"
               captionText="William Almeida"
               containerHeight="400px"
@@ -173,7 +173,7 @@ function App() {
 
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto'>
           <div className='bg-zinc-800 p-6 rounded-lg shadow-xl transition-transform duration-300 hover:scale-105'>
-            <img src="/acervo.png" alt="Imagem sistema de acervo literário" className="w-full h-48 object-cover rounded-md mb-4" />
+            <img src="./acervo.png" alt="Imagem sistema de acervo literário" className="w-full h-48 object-cover rounded-md mb-4" />
             <div className="flex space-x-3 mb-4 text-purple-400">
               <SiNextdotjs size={24} />
               <SiPostgresql size={24} />
@@ -189,7 +189,7 @@ function App() {
           </div>
 
           <div className='bg-zinc-800 p-6 rounded-lg shadow-xl transition-transform duration-300 hover:scale-105'>
-            <img src="/acervo.png" alt="Placeholder do Projeto 2" className="w-full h-48 object-cover rounded-md mb-4" />
+            <img src="./acervo.png" alt="Placeholder do Projeto 2" className="w-full h-48 object-cover rounded-md mb-4" />
             <div className="flex space-x-3 mb-4 text-purple-400">
               <FaReact size={24} />
               <FaNodeJs size={24} />
@@ -205,7 +205,7 @@ function App() {
           </div>
 
           <div className='bg-zinc-800 p-6 rounded-lg shadow-xl transition-transform duration-300 hover:scale-105'>
-            <img src="/ecoacao.png" alt="Placeholder do Projeto 3" className="w-full h-48 object-cover rounded-md mb-4" />
+            <img src="./ecoacao.png" alt="Placeholder do Projeto 3" className="w-full h-48 object-cover rounded-md mb-4" />
             <div className="flex space-x-3 mb-4 text-purple-400">
               <SiNextdotjs size={24} />
               <FaReact size={24} />
