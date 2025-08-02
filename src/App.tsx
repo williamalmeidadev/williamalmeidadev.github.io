@@ -169,7 +169,7 @@ function App() {
             </div>
             <h3 className='text-xl md:text-2xl font-bold mb-2 text-center'>Especialização em Suporte de TI</h3>
             <p className='text-zinc-400 mb-4 text-center'>Curso da Google com aprendizado sobre administração de sistemas.</p>
-            <a href="#" target="_blank" rel="noopener noreferrer" className='mt-auto bg-purple-700 hover:bg-purple-900 text-white font-semibold py-2 px-4 rounded-full transition-colors w-full text-center'>
+            <a href="https://www.coursera.org/account/accomplishments/specialization/7NL4VVJF0HZH" target="_blank" rel="noopener noreferrer" className='mt-auto bg-purple-700 hover:bg-purple-900 text-white font-semibold py-2 px-4 rounded-full transition-colors w-full text-center'>
               Ver Certificado
             </a>
           </div>
