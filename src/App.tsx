@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Squares from './blocks/Backgrounds/Squares/Squares';
 import TextType from './blocks/TextAnimations/TextType/TextType';
 import TiltedCard from './blocks/Components/TiltedCard/TiltedCard';
-import { FaInstagram, FaLinkedin, FaGithub, FaReact, FaNodeJs, FaCode, FaEnvelope, FaBars } from "react-icons/fa6";
+import { FaInstagram, FaLinkedin, FaGithub, FaReact, FaNodeJs, FaCode, FaEnvelope} from "react-icons/fa6";
 import { SiNextdotjs, SiPostgresql, SiAuth0, SiVite, SiMedium } from "react-icons/si";
 import './App.css'; // Mantenha este import para estilos específicos
 import { IoMenu } from "react-icons/io5";
