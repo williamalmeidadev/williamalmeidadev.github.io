@@ -3,7 +3,7 @@ import Squares from './blocks/Backgrounds/Squares/Squares';
 import TextType from './blocks/TextAnimations/TextType/TextType';
 import TiltedCard from './blocks/Components/TiltedCard/TiltedCard';
 import { FaInstagram, FaLinkedin, FaGithub, FaReact, FaNodeJs, FaCode, FaEnvelope } from "react-icons/fa6";
-import { SiNextdotjs, SiPostgresql, SiAuth0, SiVite } from "react-icons/si";
+import { SiNextdotjs, SiPostgresql, SiAuth0, SiVite, SiMedium } from "react-icons/si";
 
 function App() {
   return (
@@ -28,6 +28,10 @@ function App() {
               <a href="https://www.instagram.com/_williamalmeida/" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
                 <FaInstagram size={24} />
               </a>
+              <a href="https://medium.com/@williamalmeidadev" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
+                <SiMedium size={24} />
+              </a>
+
             </div>
           </div>
         </nav>
@@ -48,7 +52,7 @@ function App() {
         <div className="content-overlay">
           <div className="left-content">
             <TiltedCard
-              imageSrc="src/assets/will.png"
+              imageSrc="./src/assets/will.png"
               altText="William Almeida"
               captionText="William Almeida"
               containerHeight="400px"
@@ -116,7 +120,7 @@ function App() {
             </button>
           </div>
 
-          <div className='flex flex-col items-center bg-zinc-800 border-2 border-purple-400 p-6 rounded-lg shadow-xl w-full sm:w-1/3 transition-all duration-300 hover:shadow-[0_0_25px_rgba(192,132,252,0.8)]'>
+          <div className='flex flex-col items-center bg-zinc-800 border-2 border-purple-400 p-6 rounded-lg shadow-xl w-full sm:w-1/3 transition-all duration-300 hover:shadow-[0_0_25px_rgba(192,132,252,0.5)]'>
             <div className="flex justify-between items-center w-full mb-4">
               <FaCode size={24} className="text-purple-400" />
               <span className="bg-purple-900 text-white text-xs font-semibold px-2.5 py-0.5 rounded-full">
@@ -169,7 +173,7 @@ function App() {
 
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto'>
           <div className='bg-zinc-800 p-6 rounded-lg shadow-xl transition-transform duration-300 hover:scale-105'>
-            <img src="src/assets/acervo.png" alt="Imagem sistema de acervo literário" className="w-full h-48 object-cover rounded-md mb-4" />
+            <img src="./src/assets/acervo.png" alt="Imagem sistema de acervo literário" className="w-full h-48 object-cover rounded-md mb-4" />
             <div className="flex space-x-3 mb-4 text-purple-400">
               <SiNextdotjs size={24} />
               <SiPostgresql size={24} />
@@ -185,7 +189,7 @@ function App() {
           </div>
 
           <div className='bg-zinc-800 p-6 rounded-lg shadow-xl transition-transform duration-300 hover:scale-105'>
-            <img src="src/assets/acervo.png" alt="Placeholder do Projeto 2" className="w-full h-48 object-cover rounded-md mb-4" />
+            <img src="./src/assets/acervo.png" alt="Placeholder do Projeto 2" className="w-full h-48 object-cover rounded-md mb-4" />
             <div className="flex space-x-3 mb-4 text-purple-400">
               <FaReact size={24} />
               <FaNodeJs size={24} />
@@ -201,7 +205,7 @@ function App() {
           </div>
 
           <div className='bg-zinc-800 p-6 rounded-lg shadow-xl transition-transform duration-300 hover:scale-105'>
-            <img src="src/assets/ecoacao.png" alt="Placeholder do Projeto 3" className="w-full h-48 object-cover rounded-md mb-4" />
+            <img src="./src/assets/ecoacao.png" alt="Placeholder do Projeto 3" className="w-full h-48 object-cover rounded-md mb-4" />
             <div className="flex space-x-3 mb-4 text-purple-400">
               <SiNextdotjs size={24} />
               <FaReact size={24} />
