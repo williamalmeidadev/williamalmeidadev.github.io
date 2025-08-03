@@ -162,7 +162,7 @@ function App() {
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-purple-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </a>
             <div className='flex items-center space-x-5 ml-8'>
-              <a href="https://www.linkedin.com/in/williamalmeidadev/" target="_blank" rel="noopener noreferrer" className='text-white hover:text-purple-400 transition-colors duration-300 transform hover:scale-110' aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/williamalmeida0/" target="_blank" rel="noopener noreferrer" className='text-white hover:text-purple-400 transition-colors duration-300 transform hover:scale-110' aria-label="LinkedIn">
                 <FaLinkedin size={26} />
               </a>
               <a href="https://github.com/WilliamAlmeidadev" target="_blank" rel="noopener noreferrer" className='text-white hover:text-purple-400 transition-colors duration-300 transform hover:scale-110' aria-label="GitHub">
@@ -198,7 +198,7 @@ function App() {
             <a href="#contato" onClick={toggleMenu} className='font-semibold hover:text-purple-400 transition-colors'>{t('contact')}</a>
           </nav>
           <div className='flex items-center space-x-6 mt-12'>
-            <a href="https://www.linkedin.com/in/williamalmeidadev/" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
+            <a href="https://www.linkedin.com/in/williamalmeida0/" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
               <FaLinkedin size={32} />
             </a>
             <a href="https://github.com/WilliamAlmeidadev" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
@@ -379,7 +379,7 @@ function App() {
               <FaEnvelope size={32} className='text-purple-400' />
               <span className='font-semibold text-lg'>Email</span>
             </a>
-            <a href="https://www.linkedin.com/in/williamalmeidadev/" target="_blank" rel="noopener noreferrer" className='flex items-center space-x-4 bg-white/5 backdrop-blur-md border border-white/20 shadow-lg p-4 md:p-6 rounded-lg transition-all duration-300 hover:bg-white/10 hover:border-white/30 w-full sm:w-auto'>
+            <a href="https://www.linkedin.com/in/williamalmeida0/" target="_blank" rel="noopener noreferrer" className='flex items-center space-x-4 bg-white/5 backdrop-blur-md border border-white/20 shadow-lg p-4 md:p-6 rounded-lg transition-all duration-300 hover:bg-white/10 hover:border-white/30 w-full sm:w-auto'>
               <FaLinkedin size={32} className='text-purple-400' />
               <span className='font-semibold text-lg'>LinkedIn</span>
             </a>
