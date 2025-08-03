@@ -33,7 +33,7 @@ function App() {
             <a href="#projetos" className='font-semibold text-lg hover:text-purple-400 transition-colors'>Projetos</a>
             <a href="#contato" className='font-semibold text-lg hover:text-purple-400 transition-colors'>Contato</a>
             <div className='flex items-center space-x-4 ml-6'>
-              <a href="https://www.linkedin.com/in/williamalmeida0/" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
+              <a href="https://www.linkedin.com/in/williamalmeidadev/" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
                 <FaLinkedin size={24} />
               </a>
               <a href="https://github.com/WilliamAlmeidadev" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
@@ -62,7 +62,7 @@ function App() {
             <a href="#contato" onClick={toggleMenu} className='font-semibold hover:text-purple-400 transition-colors'>Contato</a>
           </nav>
           <div className='flex items-center space-x-6 mt-12'>
-            <a href="https://www.linkedin.com/in/williamalmeida0/" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
+            <a href="https://www.linkedin.com/in/williamalmeidadev/" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
               <FaLinkedin size={32} />
             </a>
             <a href="https://github.com/WilliamAlmeidadev" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
@@ -242,11 +242,11 @@ function App() {
               <FaEnvelope size={32} className='text-purple-400' />
               <span className='font-semibold text-lg'>Email</span>
             </a>
-            <a href="https://www.linkedin.com/in/williamalmeida0/" target="_blank" rel="noopener noreferrer" className='flex items-center space-x-4 bg-white/5 backdrop-blur-md border border-white/20 shadow-lg p-4 md:p-6 rounded-lg transition-all duration-300 hover:bg-white/10 hover:border-white/30 w-full sm:w-auto'>
+            <a href="https://www.linkedin.com/in/williamalmeidadev/" target="_blank" rel="noopener noreferrer" className='flex items-center space-x-4 bg-white/5 backdrop-blur-md border border-white/20 shadow-lg p-4 md:p-6 rounded-lg transition-all duration-300 hover:bg-white/10 hover:border-white/30 w-full sm:w-auto'>
               <FaLinkedin size={32} className='text-purple-400' />
               <span className='font-semibold text-lg'>LinkedIn</span>
             </a>
-            <a href="https://github.com/WilliamAlmeida1" target="_blank" rel="noopener noreferrer" className='flex items-center space-x-4 bg-white/5 backdrop-blur-md border border-white/20 shadow-lg p-4 md:p-6 rounded-lg transition-all duration-300 hover:bg-white/10 hover:border-white/30 w-full sm:w-auto'>
+            <a href="https://github.com/williamalmeidadev" target="_blank" rel="noopener noreferrer" className='flex items-center space-x-4 bg-white/5 backdrop-blur-md border border-white/20 shadow-lg p-4 md:p-6 rounded-lg transition-all duration-300 hover:bg-white/10 hover:border-white/30 w-full sm:w-auto'>
               <FaGithub size={32} className='text-purple-400' />
               <span className='font-semibold text-lg'>GitHub</span>
             </a>
