@@ -168,7 +168,7 @@ function App() {
               <a href="https://github.com/WilliamAlmeidadev" target="_blank" rel="noopener noreferrer" className='text-white hover:text-purple-400 transition-colors duration-300 transform hover:scale-110' aria-label="GitHub">
                 <FaGithub size={26} />
               </a>
-              <a href="https://www.instagram.com/_williamalmeida/" target="_blank" rel="noopener noreferrer" className='text-white hover:text-purple-400 transition-colors duration-300 transform hover:scale-110' aria-label="Instagram">
+              <a href="https://www.instagram.com/williamalmeida.dev/" target="_blank" rel="noopener noreferrer" className='text-white hover:text-purple-400 transition-colors duration-300 transform hover:scale-110' aria-label="Instagram">
                 <FaInstagram size={26} />
               </a>
               <a href="https://medium.com/@williamalmeidadev" target="_blank" rel="noopener noreferrer" className='text-white hover:text-purple-400 transition-colors duration-300 transform hover:scale-110' aria-label="Medium">
@@ -204,7 +204,7 @@ function App() {
             <a href="https://github.com/WilliamAlmeidadev" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
               <FaGithub size={32} />
             </a>
-            <a href="https://www.instagram.com/_williamalmeida/" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
+            <a href="https://www.instagram.com/williamalmeida.dev/" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
               <FaInstagram size={32} />
             </a>
             <a href="https://medium.com/@williamalmeidadev" target="_blank" rel="noopener noreferrer" className='hover:text-purple-400 transition-colors'>
@@ -387,7 +387,7 @@ function App() {
               <FaGithub size={32} className='text-purple-400' />
               <span className='font-semibold text-lg'>GitHub</span>
             </a>
-            <a href="https://www.instagram.com/_williamalmeida/" target="_blank" rel="noopener noreferrer" className='flex items-center space-x-4 bg-white/5 backdrop-blur-md border border-white/20 shadow-lg p-4 md:p-6 rounded-lg transition-all duration-300 hover:bg-white/10 hover:border-white/30 w-full sm:w-auto'>
+            <a href="https://www.instagram.com/williamalmeida.dev/" target="_blank" rel="noopener noreferrer" className='flex items-center space-x-4 bg-white/5 backdrop-blur-md border border-white/20 shadow-lg p-4 md:p-6 rounded-lg transition-all duration-300 hover:bg-white/10 hover:border-white/30 w-full sm:w-auto'>
               <FaInstagram size={32} className='text-purple-400' />
               <span className='font-semibold text-lg'>Instagram</span>
             </a>
