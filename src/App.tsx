@@ -218,6 +218,7 @@ function App() {
           <nav className='flex flex-col space-y-8 text-center text-3xl'>
             <a href="#inicio" onClick={toggleMenu} className='font-semibold hover:text-purple-400 transition-colors'>{t('home')}</a>
             <a href="#sobremim" onClick={toggleMenu} className='font-semibold hover:text-purple-400 transition-colors'>{t('about')}</a>
+            <a href="#tecnologias" onClick={toggleMenu} className='font-semibold hover:text-purple-400 transition-colors'>{t('tech')}</a>
             <a href="#projetos" onClick={toggleMenu} className='font-semibold hover:text-purple-400 transition-colors'>{t('projects')}</a>
             <a href="#contato" onClick={toggleMenu} className='font-semibold hover:text-purple-400 transition-colors'>{t('contact')}</a>
           </nav>
