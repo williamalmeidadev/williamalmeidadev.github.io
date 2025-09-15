@@ -10,9 +10,28 @@ import { FaExchangeAlt } from "react-icons/fa";
 import './App.css';
 import { IoMenu } from "react-icons/io5";
 
+import { FaJava, FaPython } from "react-icons/fa6";
+import { SiJavascript, SiSpringboot } from "react-icons/si";
+
+import { motion } from "framer-motion";
+
+const techStack = [
+  { name: "Python", icon: <FaPython size={48} className="text-blue-400" />, level: "85%" },
+  { name: "JavaScript", icon: <SiJavascript size={48} className="text-yellow-400" />, level: "70%" },
+  { name: "Java", icon: <FaJava size={48} className="text-red-500" />, level: "40%" },
+  { name: "React", icon: <FaReact size={48} className="text-cyan-400" />, level: "70%" },
+  { name: "Node.js", icon: <FaNodeJs size={48} className="text-green-500" />, level: "60%" },
+  { name: "PostgreSQL", icon: <SiPostgresql size={48} className="text-sky-500" />, level: "85%" },
+  { name: "Auth0", icon: <SiAuth0 size={48} className="text-orange-400" />, level: "65%" },
+  { name: "Spring Boot", icon: <SiSpringboot size={48} className="text-green-600" />, level: "30%" },
+
+];
+
+
 const resources = {
   pt: {
     translation: {
+      tech: 'Tecnologias',
       portfolio: 'Portfólio',
       home: 'Início',
       about: 'Sobre mim',
@@ -47,6 +66,7 @@ const resources = {
   },
   en: {
     translation: {
+      tech: 'Tech Stack',
       portfolio: 'Portfolio',
       home: 'Home',
       about: 'About me',
@@ -151,6 +171,10 @@ function App() {
             </a>
             <a href="#sobremim" className='font-semibold text-lg hover:text-purple-400 transition-colors relative group'>
               {t('about')}
+              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-purple-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+            </a>
+            <a href="#tecnologias" className='font-semibold text-lg hover:text-purple-400 transition-colors relative group'>
+              {t('tech')}
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-purple-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </a>
             <a href="#projetos" className='font-semibold text-lg hover:text-purple-400 transition-colors relative group'>
@@ -312,6 +336,44 @@ function App() {
           </div>
         </div>
       </section>
+
+      <section
+        id="tecnologias"
+        className="min-h-screen py-16 px-4 bg-gradient-to-b from-[#0d0d15] to-[#1a1a29] text-white flex flex-col justify-center"
+      >
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-extrabold font-poppins leading-tight md:leading-[1.3] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-600">
+            {t("tech")}
+          </h2>
+          <p className="text-zinc-400 mt-3 text-lg">
+            {i18n.language === "pt"
+              ? "Tecnologias que utilizo no meu dia a dia"
+              : "Technologies I work with daily"}
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 max-w-6xl mx-auto text-center">
+          {techStack.map((tech, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              className="relative group p-6 rounded-2xl bg-zinc-900 border border-purple-400/30 shadow-lg hover:shadow-purple-500/30 transition-all duration-300 hover:scale-105"
+            >
+              <div className="flex flex-col items-center space-y-3">
+                <div className="relative">
+                  {tech.icon}
+                  <span className="absolute -inset-2 rounded-full blur-lg bg-purple-500/30 opacity-0 group-hover:opacity-100 transition duration-500"></span>
+                </div>
+                <span className="font-semibold text-lg">{tech.name}</span>
+                <span className="text-sm text-purple-400 font-bold">{tech.level}</span>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
 
       <section id='projetos' className='min-h-screen py-16 px-4 bg-[#111119] text-white flex flex-col justify-center'>
         <div className='text-center mb-12'>
