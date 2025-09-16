@@ -286,7 +286,10 @@ function App() {
         </div>
       </section>
 
-      <section id='sobremim' className='min-h-screen py-16 px-4 bg-[#111119] text-white flex flex-col justify-center'>
+      <section
+        id="sobremim"
+        className="min-h-screen py-16 px-4 bg-gradient-to-b from-[#111119] to-[#0d0d15] text-white flex flex-col justify-center"
+      >
         <div className='text-center mb-12'>
           <h2 className='text-4xl sm:text-5xl font-extrabold font-poppins'>{t('aboutTitle')}</h2>
         </div>
@@ -376,7 +379,11 @@ function App() {
       </section>
 
 
-      <section id='projetos' className='min-h-screen py-16 px-4 bg-[#111119] text-white flex flex-col justify-center'>
+      <section
+        id="projetos"
+        className="min-h-screen py-16 px-4 bg-gradient-to-b from-[#1a1a29] to-[#111119] text-white flex flex-col justify-center"
+      >
+
         <div className='text-center mb-12'>
           <h2 className='text-4xl sm:text-5xl font-extrabold font-poppins'>{t('projectsTitle')}</h2>
         </div>
